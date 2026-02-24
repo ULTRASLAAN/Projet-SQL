@@ -28,12 +28,6 @@ Ce projet consiste à interroger une base de données PostgreSQL pour une entrep
 2. Se connecter à la base de données fournie.
 3. Exécuter les requêtes des fichiers SQL du dossier `/sql` selon les besoins.
 
-Chaque requête est précédée d’un commentaire expliquant son objectif et sa logique.
-
-## Versionning
-- Commits réguliers par chaque membre.
-- Messages de commit clairs (ex : "Quête 2.2 – tri véhicules disponibles").
-
 ## Présentation orale
 - Présentation du contexte et de la structure de la BDD.
 - Démonstration et explication de plusieurs requêtes.
@@ -41,7 +35,4 @@ Chaque requête est précédée d’un commentaire expliquant son objectif et sa
 - Capacité à modifier une requête en direct.
 
 ## Lien du dépôt GitHub
-- [Lien vers le dépôt](mettre-le-lien-ici)
-
----
-N’hésitez pas à compléter ce README avec toute information utile pour la compréhension du projet ou l’exécution des requêtes.
+- [Lien vers le dépôt](https://github.com/ULTRASLAAN/Projet-SQL)
