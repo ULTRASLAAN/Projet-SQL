@@ -1,18 +1,10 @@
--- Quête 1 : Découverte du SQL
--- 1. Afficher tous les véhicules
--- Cette requête permet de lister tous les véhicules présents dans la base.
+#2
 SELECT * FROM vehicules;
-
--- 2. Afficher uniquement les véhicules disponibles
--- On filtre sur la colonne etat pour ne garder que les véhicules disponibles.
+#2
 SELECT * FROM vehicules WHERE etat = 'Disponible';
-
--- 3. Afficher les véhicules situés dans une ville donnée
--- On filtre sur la colonne ville. Remplacez 'Paris' par la ville souhaitée.
+#3
 SELECT *
 FROM vehicules
 WHERE localisation = 'Paris';
-
--- 4. Afficher les véhicules ayant une autonomie supérieure à 400 km
--- On filtre sur la colonne autonomie_km.
+#4
 SELECT * FROM vehicules WHERE autonomie_km > 400;

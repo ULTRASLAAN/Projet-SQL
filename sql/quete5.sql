@@ -1,8 +1,7 @@
--- Quête 5 : Cas métier
--- 1. Afficher les trois véhicules les plus autonomes actuellement disponibles
+#1
 SELECT * FROM vehicules WHERE etat = 'disponible' ORDER BY autonomie_km DESC LIMIT 3;
 
--- 2. Afficher la ville possédant le plus de véhicules disponibles (affiche toutes les villes ex-aequo)
+#2.
 WITH dispo AS (
   SELECT localisation, COUNT(*) AS nb_disponibles
   FROM vehicules
@@ -13,14 +12,14 @@ SELECT localisation, nb_disponibles
 FROM dispo
 WHERE nb_disponibles = (SELECT MAX(nb_disponibles) FROM dispo);
 
--- 3. Afficher les clients ayant effectué au moins deux locations
+#3
 SELECT client.id_client, client.nom, client.prenom, COUNT(location.id_location) AS nb_locations
 FROM client
 JOIN location ON client.id_client = location.id_client
 GROUP BY client.id_client, client.nom, client.prenom
 HAVING COUNT(location.id_location) >= 2;
 
--- 4. Afficher les véhicules n’ayant jamais été loués
+#4
 SELECT vehicules.*
 FROM vehicules
 LEFT JOIN location ON vehicules.id = location.id_vehicule::text

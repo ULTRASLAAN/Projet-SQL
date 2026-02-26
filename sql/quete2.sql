@@ -1,9 +1,8 @@
--- Quête 2 : Tri et filtres
--- 1. Afficher les véhicules triés par autonomie décroissante
+#1
 SELECT * FROM vehicules ORDER BY autonomie_km DESC;
 
--- 2. Afficher les véhicules disponibles, triés par ville puis par marque
+#2
 SELECT * FROM vehicules WHERE etat = 'Disponible' ORDER BY localisation, marque;
 
--- 3. Afficher la liste des clients par ordre alphabétique
+#3
 SELECT * FROM client ORDER BY nom, prenom;

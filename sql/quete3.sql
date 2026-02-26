@@ -1,14 +1,14 @@
--- 1. Afficher la liste des locations avec le nom et le prénom du client
+#1
 SELECT location.*, client.nom, client.prenom
 FROM location
 JOIN client ON location.id_client = client.id_client;
 
--- 2. Afficher la liste des locations avec la marque et le modèle du véhicule
+#2
 SELECT location.*, vehicules.marque, vehicules.modele
 FROM location
 JOIN vehicules ON location.id_vehicule::text = vehicules.id;
 
--- 3. Afficher la station de départ et la station d’arrivée pour chaque location
+#3
 SELECT location.*, s1.nom AS station_depart, s2.nom AS station_arrivee
 FROM location
 JOIN station s1 ON location.id_station_depart = s1.id_station
@@ -25,5 +25,3 @@ INSERT INTO location (id_location, date_debut, date_fin, id_client, id_vehicule,
 VALUES
   (1, '2026-02-01', '2026-02-05', 1, 1, 1, 2),
   (2, '2026-02-10', '2026-02-12', 2, 2, 2, 3);
-
--- (Assure-toi que les id_client, id_vehicule, id_station existent dans les autres tables)
