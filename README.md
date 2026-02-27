@@ -38,6 +38,4 @@ Ce projet consiste à interroger une base de données PostgreSQL pour une entrep
 - [Lien vers le dépôt](https://github.com/ULTRASLAAN/Projet-SQL)
 
 commande pour importer les données :
-\copy vehicules FROM 'C:\Users\GLITC\Documents\vehicules.csv' 
-DELIMITER ',' 
-CSV HEADER;
+'C:\Users\GLITC\Documents\vehicules.csv' 

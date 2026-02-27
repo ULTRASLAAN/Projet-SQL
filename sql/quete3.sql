@@ -1,7 +1,7 @@
 #1
 SELECT location.*, client.nom, client.prenom
 FROM location
-JOIN client ON location.id_client = client.id_client;
+JOIN client ON location.id_client = client.id_client; 
 
 #2
 SELECT location.*, vehicules.marque, vehicules.modele
